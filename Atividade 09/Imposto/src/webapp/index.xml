@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Impostos</title>
+</head>
+<body>
+    <h1>Calculadora de Impostos</h1>
+    <form action="calcular" method="post">
+        Cidade: <select name="cidade">
+            <option value="SaoPaulo">São Paulo</option>
+            <option value="BeloHorizonte">Belo Horizonte</option>
+            <option value="PortoAlegre">Porto Alegre</option>
+            <option value="Curitiba">Curitiba</option>
+        </select><br>
+        Área Total: <input type="text" name="areaTotal"><br>
+        Número de Cômodos: <input type="text" name="numeroComodos"><br>
+        Número de Quartos: <input type="text" name="numeroQuartos"><br>
+        Área da Garagem: <input type="text" name="areaGaragem"><br>
+        Idade do Imóvel: <input type="text" name="idadeImovel"><br>
+        <input type="submit" value="Calcular Imposto">
+    </form>
+</body>
+</html>
